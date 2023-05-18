@@ -16,9 +16,8 @@
 Настройки
 --------
 
-Moved to settings_.
+Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings.html).
 
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
 
 Базовые команды
 --------------
