@@ -3,8 +3,6 @@
 В данном репозитории находится дефолтный конфигурационный файл nginx
 
 
-# REBRAIN-DEVOPS-TASK4
-
 ### REBRAIN-DEVOPS-TASK4
 
 ![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)
