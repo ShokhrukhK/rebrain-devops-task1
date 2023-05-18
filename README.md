@@ -1,19 +1,15 @@
-## REBRAIN-DEVOPS-TASK1
+# REBRAIN-DEVOPS-TASK1
 
 В данном репозитории находится дефолтный конфигурационный файл nginx
 
 
-REBRAIN-DEVOPS-TASK4
+# REBRAIN-DEVOPS-TASK4
 =====================
 
 REBRAIN-DEVOPS-TASK4
 
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-     :target: https://github.com/ambv/black
-     :alt: code style Black 
+     [Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)
+     [code style Black ](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 
 :Лицензия: MIT
@@ -29,7 +25,7 @@ Moved to settings_.
 --------------
 
 Создание пользователя
-^^^^^^^^^^^^^^^^^^^^^
+
 
 * Для создания **простого пользователя** пройдите по следующей ссылке [signup](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 
