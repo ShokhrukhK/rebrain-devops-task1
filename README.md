@@ -3,7 +3,99 @@
 В данном репозитории находится дефолтный конфигурационный файл nginx
 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+REBRAIN-DEVOPS-TASK4
+=====================
+
+REBRAIN-DEVOPS-TASK4
+
+.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
+     :target: https://github.com/pydanny/cookiecutter-django/
+     :alt: Built with Cookiecutter Django
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+     :target: https://github.com/ambv/black
+     :alt: code style Black 
+
+
+:Лицензия: MIT
+
+Настройки
+--------
+
+Moved to settings_.
+
+.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
+
+Базовые команды
+--------------
+
+Создание пользователя
+^^^^^^^^^^^^^^^^^^^^^
+
+* Для создания **простого пользователя** пройдите по следующей ссылке [signup](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+
+* Для создания **привилегированного пользователя**, запустите командную строку и запустите следующую команду::
+
+    $ python manage.py createsuperuser
+    
+>  **простого пользователя** - пользователь, не обладающий расширенными правами доступа к системе
+>  **привилегированного пользователя** - пользователь, обладающий расширенными правами доступа к системе
+
+
+Тестирование кода
+^^^^^^^^^^^^^^^^^
+
+1. Тестирование используя mypy
+
+::
+
+  $ mypy project
+
+2. Тестовое Покрытие
+^^^^^^^^^^^^^^^^^
+
+для тестового покрытия кода и генерации отчетов в формате HTML запустите следующее
+::
+
+    $ coverage run -m pytest
+    $ coverage html
+    $ open htmlcov/index.html
+
+Тестирование используя py.test
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+  $ pytest
+
+
+Celery
+^^^^^^
+
+Это приложение используется очереди Celery.
+
+Для запуска celery worker:
+
+.. code-block:: bash
+
+    cd project
+    celery -A config.celery_app worker -l info
+
+Обратите внимание: чтобы зпустить Celery, важно *где* выполняются команды celery. Если вы находитесь в одной папке с *manage.py*, команда зупутится.
+
+
+
+
+
+Развертывание проекта
+----------
+
+Далее подробно описано, как развернуть это приложение.
+
+
+
+Docker
+^^^^^^
+
+`Документация cookiecutter-django Docker`_.
+
+.. _`Документация cookiecutter-django Docker`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
